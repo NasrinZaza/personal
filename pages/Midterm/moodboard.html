@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Moodboard</title>
+    <link rel="stylesheet" href="../css/midtermcss/moodboard.css">
+    <link rel="stylesheet" href="../css/midtermcss/main.css">
+    <link rel="stylesheet" href="https://indestructibletype.com/fonts/Bodoni/Bodoni.css" type="text/css" charset="utf-8" />
+</head>
+<body>
+    <nav id="myNav" class="overlay">
+        <span href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</span>
+        <div class="overlay-content">
+          <a href="index.html" class="one"><span>Essay</span></a>
+          <a href="moodboard.html" class="two" ><span>Mood Board</span></a>
+          <a href="wireframe.html" class="three"><span>Wireframe</span></a>
+          <a href="mockup.html" class="four"><span>Mockup</span></a>
+        </div>
+
+  </nav>
+  
+  <span id="trigger" onclick="openNav()">☰</span>
+
+    <header class="hero">
+        <hgroup>
+            <h1>MoodBoard</h1>
+        </hgroup>  
+    </header>
+    
+    <div>
+
+    
+    <img src="images/moodboard.jpg" class="bigimg">
+    
+    <a href="https://www.amcharts.com/visited_countries/"><img src="images/website.png" class="bigimg"></a>
+    </div>
+
+
+    <footer id="footer">© The Kurdish Nation</footer>
+    
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "30%";
+        }
+        
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<!--<meta name="viewport" content="width=device-width, initial-scale=1.0"> --> 
+    <title>Exercises</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+
+                <div class="title">
+                    <div>NASRIN ZAZA <br> DART 449 </div> 
+                </div>
+
+            </div>
+
+            <div class="right-side">
+
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Home</a>
+                </div>
+
+                <div class="nav-link-wrapper active nav link">
+                    <a href="exercises.html">Exercises</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="pages/readings.html">Readings</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="content-wrapper">
+      <div class="portfolio-items-wrapper">
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/w1.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper"></div>
+            <div class="subtitle"><a href="pages/week1.html">Week 1:<br>Basic HTML & CSS review</a></div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/w2.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper"></div>
+            <div class="subtitle"><a href="pages/week2.html">Week 2:<br>CSS grid review</a></div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/w3.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper"></div>
+            <div class="subtitle"><a href="index.html">Week 3:<br>Personal class website</a></div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/w4.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper"></div>
+            <div class="subtitle"><a href="pages/week4.html">Week 4:<br>Intro to javascript</a></div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/w5.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper"></div>
+            <div class="subtitle"><a href="pages/week5.html">Week 5:<br>Basic javascripts</a></div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/w6.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper"></div>
+            <div class="subtitle"><a href="pages/week6.html">Week 6:<br>Intersection Observer</a></div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/midterm.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper"></div>
+            <div class="subtitle"><a href="https://nasrinzaza.github.io/">Week 8:<br>Midterm</a></div>
+          </div>
+        </div>
+
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/FinalProject.png)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper"></div>
+            <div class="subtitle"><a href="https://kurdishnation.herokuapp.com/">Week Final:<br>Final Project</a></div>
+          </div>
+        </div>
+ 
+
+</body>
+
+
+<script>
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.add('image-blur');
+    });
+
+    portfolioItem.addEventListener('mouseout', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.remove('image-blur');
+    });
+  });
+
+</script>
+
+
+</html>

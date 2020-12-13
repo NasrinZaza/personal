@@ -1,0 +1,56 @@
+/* === Mooodboard === */
+
+/* font:
+font-family: acumin-pro-wide, sans-serif;
+font-weight: 300;
+font-style: normal;
+*/
+    
+/* phone view */
+
+.hero h1 {
+    font-family: 'Bodoni 11';
+    font-size: 25px;
+    padding:12px;
+    padding-bottom: 1vh;
+    text-transform:uppercase;
+    color: rgb(5, 2, 20);
+    font-weight:normal;
+    text-align: center;
+}
+
+.bigimg{
+    width:100%;
+}
+
+
+/* ===== TABLET LAYOUT ===== */
+/* 481px to 768px. Inherits styles from: Mobile Layout. */
+@media only screen and (min-width: 481px) {
+    .hero h1 {
+        font-size:35px;
+        padding:10px;
+        padding-bottom: 5vh;
+
+    }
+
+}
+
+
+/* ===== DESKTOP LAYOUT ===== */
+/* Desktop Layout: 769px to a max of 1200px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+
+    .hero h1 {
+        font-size:40px;
+        padding:10px;
+        padding-bottom: 5vh;
+
+    }
+
+    .article {
+        margin:24px;
+        column-count: 2;
+    }
+}

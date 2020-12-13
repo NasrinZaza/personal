@@ -1,0 +1,200 @@
+/* === Styles === */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Squada+One&display=swap');
+
+body {
+	font-family: 'Raleway', sans-serif;
+	margin:0px;
+}
+
+/* phone view */
+
+.container {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.nav-wrapper {
+	display: flex;
+	justify-content: space-between;
+	padding: 15px;
+}
+
+.left-side { 
+	display: flex;
+}
+
+.nav-wrapper > .left-side > div {
+	font-family: 'Squada One', cursive;
+	font-size: 25px;
+}
+
+.right-side {
+	display: flex;	
+	color:rgb(0, 0, 0);
+	font-size: 0.9em;
+}
+
+.nav-wrapper > .right-side > div {
+	margin-right: 10px;
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	padding: 10px;
+}
+
+.nav-link-wrapper {
+	height: 10px;
+	border-bottom: 1px solid transparent;
+	transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+	color: #8a8a8a;
+	text-decoration: none;
+	transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+	border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover {
+	color: black;
+}
+
+/* exercise Items */
+
+.portfolio-items-wrapper {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+  
+.portfolio-item-wrapper {
+	position: relative;
+}
+  
+.portfolio-img-background {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 350px;
+	width: 100%;
+}
+  
+.img-text-wrapper {
+	position: absolute;
+	font-size: 1rem;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	text-align: center;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+  
+.img-text-wrapper .subtitle {
+	color: transparent;
+}
+
+.img-text-wrapper > .subtitle > a {
+	color: transparent;
+}
+  
+.image-blur {
+	transition: 0.25s;
+	filter: brightness(10%);
+}
+  
+.img-text-wrapper:hover > .subtitle > a {
+	color: rgb(255, 255, 255);
+	font-weight: 400;
+}
+
+
+/* end of excercise page */
+  
+.two-column-wrapper {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+}
+  
+.profile-image-wrapper img {
+	width: 100%;
+}
+
+  
+.profile-content-wrapper {
+	padding: 30px;
+	font-family: 'Raleway', sans-serif;
+}
+  
+.profile-content-wrapper h1 {
+	color: rgb(50, 50, 50);
+	font-family: 'Squada One', cursive;
+}
+
+
+.one-column-wrapper {
+	display: grid;
+	grid-template-columns: 1fr;
+
+}
+.reading-content-wrapper {
+	padding: 30px;
+	font-family: 'Raleway', sans-serif;
+}
+
+.reading-content-wrapper h1 {
+	color:rgb(0, 0, 0);
+	font-family: 'Raleway', sans-serif;
+	font-size: 1em;
+	text-align: left;
+}
+
+.reading-content-wrapper p {
+	column-count: 1;
+}
+
+
+
+#page-container {
+	position: relative;
+	min-height: 100vh;
+  }
+  
+#content-wrap {
+	padding-bottom: 2.5rem;
+  }
+  
+#footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 2.5rem;
+  }
+
+#more {display: none;}
+
+/*===== TABLET LAYOUT =====*/
+@media only screen and (min-width: 481px) {
+	.portfolio-items-wrapper {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+		}
+}
+
+
+
+/*===== DESKTOP LAYOUT =====*/
+@media only screen and (min-width: 769px) {
+	.portfolio-items-wrapper {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.reading-content-wrapper p {
+		column-count: 2;
+	}
+}
